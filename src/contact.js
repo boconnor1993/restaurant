@@ -7,10 +7,11 @@ export default function contact() {
 
     pageHeading.textContent = 'Contact Us';
     pageText.textContent = 'Call us at 555-555-5555 or email us at';
-    pageImage.src = './assets/contact.jpg';
+    pageImage.src = require('./assets/contact.jpg').default; // Ensure this line uses .default to access the image path
 
-    content.appendChild(pageContainer);
     pageContainer.appendChild(pageHeading);
     pageContainer.appendChild(pageText);
     pageContainer.appendChild(pageImage);
+
+    content.appendChild(pageContainer);
 }
