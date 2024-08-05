@@ -1,0 +1,152 @@
+/* Global Style Properties */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  color: #333;
+}
+
+p {
+  color: #666;
+}
+
+/* Header */
+header {
+  background-color: #007BFF;
+  color: white;
+  text-align: center;
+}
+
+/* Navigation */
+nav {
+  background: linear-gradient(to right, #1a2edf, #f50404);
+  color: white;
+  text-align: center;
+  height: 3rem;
+  margin: 0;
+  width: 100%;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+nav ul li {
+  margin: 0 10px;
+  display: flex;
+  align-items: center;
+}
+
+nav ul button {
+  background-color: transparent;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: larger;
+  outline: none;
+  width: auto;
+}
+
+nav ul button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Menu Items */
+.page-container h1 {
+  text-align: center;
+  margin-bottom: 0;
+  padding: 0;
+  color: #333;
+}
+
+.menu-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.menu-item {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.menu-item-image {
+  margin-right: 20px;
+}
+
+.menu-item-content {
+  flex-grow: 1;
+}
+
+.menu-item-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.menu-item h2 {
+  color: #333;
+  margin: 0;
+}
+
+.menu-item img {
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+}
+
+.menu-item p {
+  margin: 2px 0 0 0;
+  color: #666;
+}
+
+.menu-item button {
+  background: linear-gradient(to right, #1a2edf, #f50404);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 8px;
+  font-size: large;
+}
+
+.menu-item button:hover {
+  background: linear-gradient(to right, #f50404, #1a2edf); /* Reverse the gradient on hover */
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+  .menu-container {
+    grid-template-columns: 1fr; /* Single column for smaller screens */
+  }
+
+  nav ul {
+    flex-direction: column; /* Stack nav items vertically */
+  }
+
+  nav ul li {
+    margin: 5px 0;
+  }
+}
