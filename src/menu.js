@@ -9,7 +9,18 @@ const menuItems = [
   { name: 'Buffalo Chicken Pizza', imgSrc: require('./assets/buffalo_chicken.jpg'), description: 'Spicy buffalo chicken, mozzarella, and blue cheese.', price: '$15.99' },
   { name: 'Mushroom Pizza', imgSrc: require('./assets/mushroom.jpg'), description: 'Sautéed mushrooms, garlic, and mozzarella.', price: '$13.99' },
   { name: 'Supreme Pizza', imgSrc: require('./assets/supreme.jpg'), description: 'Pepperoni, sausage, bell peppers, onions, and olives.', price: '$17.99' },
+  { name: 'Four Cheese Pizza', imgSrc: require('./assets/four_cheese.jpg'), description: 'Mozzarella, cheddar, parmesan, and gorgonzola.', price: '$13.99' },
+  { name: 'Seafood Pizza', imgSrc: require('./assets/seafood.jpg'), description: 'Shrimp, calamari, and mussels on a garlic base.', price: '$18.99' },
+  { name: 'Pesto Chicken Pizza', imgSrc: require('./assets/pesto_chicken.jpg'), description: 'Chicken, pesto sauce, and sun-dried tomatoes.', price: '$16.99' },
+  { name: 'Sausage and Peppers Pizza', imgSrc: require('./assets/sausage_peppers.jpg'), description: 'Italian sausage, bell peppers, and onions.', price: '$14.99' },
+  { name: 'Spinach and Feta Pizza', imgSrc: require('./assets/spinach_feta.jpg'), description: 'Spinach, feta cheese, and olives.', price: '$13.99' },
+  { name: 'Truffle Mushroom Pizza', imgSrc: require('./assets/truffle_mushroom.jpg'), description: 'Truffle oil, mushrooms, and mozzarella.', price: '$19.99' },
+  { name: 'Taco Pizza', imgSrc: require('./assets/taco.jpg'), description: 'Ground beef, lettuce, tomatoes, and cheddar cheese.', price: '$15.99' },
+  { name: 'Chicken Alfredo Pizza', imgSrc: require('./assets/chicken_alfredo.jpg'), description: 'Alfredo sauce, grilled chicken, and spinach.', price: '$16.99' },
+  { name: 'Mediterranean Pizza', imgSrc: require('./assets/mediterranean.jpg'), description: 'Artichokes, olives, feta cheese, and tomatoes.', price: '$14.99' },
+  { name: 'Pulled Pork Pizza', imgSrc: require('./assets/pulled_pork.jpg'), description: 'Pulled pork, BBQ sauce, and red onions.', price: '$17.99' }
 ];
+
 
 function createMenuItem(itemName, imgSrc, description, price) {
   const menuItem = document.createElement('div');

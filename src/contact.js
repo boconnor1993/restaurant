@@ -5,6 +5,8 @@ export default function contact() {
   const pageText = document.createElement('p');
   const pageImage = document.createElement('img');
 
+  pageContainer.classList.add('contact-container');
+
   pageHeading.textContent = 'Contact Us';
   pageText.textContent = 'Call us at 555-555-5555 or email us at';
   pageImage.src = require('./assets/contact.jpg');

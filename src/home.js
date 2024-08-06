@@ -5,6 +5,8 @@ export default function home() {
   const pageText = document.createElement('p');
   const pageImage = document.createElement('img');
 
+  pageContainer.classList.add('home-container');
+
   pageHeading.textContent = 'Welcome to Our Pizzeria!';
   pageText.textContent = 'We serve the best pizza in town. Order online or visit us at our location.';
   pageImage.src = require('./assets/pizzeria.jpg');
