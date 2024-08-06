@@ -7,7 +7,7 @@ export default function contact() {
 
   pageHeading.textContent = 'Contact Us';
   pageText.textContent = 'Call us at 555-555-5555 or email us at';
-  pageImage.src = './assets/contact.jpg';
+  pageImage.src = require('./assets/contact.jpg');
 
   pageContainer.appendChild(pageHeading);
   pageContainer.appendChild(pageText);

@@ -7,7 +7,7 @@ export default function home() {
 
   pageHeading.textContent = 'Welcome to Our Pizzeria!';
   pageText.textContent = 'We serve the best pizza in town. Order online or visit us at our location.';
-  pageImage.src = './assets/pizzeria.jpg';
+  pageImage.src = require('./assets/pizzeria.jpg');
 
   pageContainer.appendChild(pageHeading);
   pageContainer.appendChild(pageText);
